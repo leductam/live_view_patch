@@ -1,3 +1,17 @@
 <section class="phx-hero">
   <a href="/home">Do test</a>
+  <div style="text-align: left;">
+    <p>
+      Step 1: Open browser Developer tools.<br />
+
+      Step 2: Click button "KPI", then the browser Console show the Javascript errors.<br />
+
+      Step 3: Click button "SALES", and perform multi click lables "Region" and "Global" to switch the data source of
+      Sales.<br />
+
+      Step 4: Click button "KPI", then the browser Console show the Javascript errors again.<br />
+
+      Step 5: repeat Step 3 again and browser Console show the more Javascript errors, and hang re-render.
+    </p>
+  </div>
 </section>
