@@ -1,0 +1,42 @@
+/* This file is for your main application css. */
+
+@import "./phoenix.css";
+@import "../../deps/phoenix_live_view/assets/css/live_view.css";
+/* Start Quote color styles */
+
+.up {
+    color: #1be44d
+}
+
+.down {
+    color: #db0d0d
+}
+
+.ref {
+    color: #d8db0d
+}
+
+.ceil {
+    color: #ee0cdb
+}
+
+.floor {
+    color: #0cdfee
+}
+
+.white {
+    color: #ffffff
+}
+
+.flash {
+    animation-name: flash;
+    animation-duration: 1600ms
+}
+
+@keyframes flash {
+    to {
+        background-color: #554b4b
+    }
+}
+
+/* End Quote color styles */

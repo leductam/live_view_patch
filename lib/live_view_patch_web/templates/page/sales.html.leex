@@ -1,0 +1,13 @@
+<%= live_patch to: Routes.live_path(@socket, LiveViewPatchWeb.HomeLive, sales: "region"), replace: false do %>
+    <span>Region</span>
+<% end %>
+<%= live_patch to: Routes.live_path(@socket, LiveViewPatchWeb.HomeLive, sales: "global"), replace: false do %>
+    <span>Global</span>
+<% end %>
+
+<table>
+    <%= for data <- @data do %>
+    <%= live_component(@socket, LiveViewPatchWeb.SalesComponent, id: data[:code], code: data[:code], ceil: data[:ceil], floor: data[:floor], ref: data[:ref], price: data[:price], price_class: get_class(data)) %>
+<% end %>
+</table>
+<%= live_component(@socket, LiveViewPatchWeb.TabComponent) %>

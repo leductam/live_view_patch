@@ -1,0 +1,6 @@
+<%= live_patch to: Routes.live_path(@socket, LiveViewPatchWeb.HomeLive, tab: "sales"), replace: false do %>
+    <button>Sales</button>
+<% end %>
+<%= live_patch to: Routes.live_path(@socket, LiveViewPatchWeb.HomeLive, tab: "kpi"), replace: false do %>
+    <button >KPI</button>
+<% end %>
