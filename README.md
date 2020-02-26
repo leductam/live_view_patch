@@ -6,14 +6,10 @@ To start your Phoenix server:
   * Install Node.js dependencies with `cd assets && npm install`
   * Start Phoenix endpoint with `mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Now you can visit [`localhost/home`](http://localhost/home) from your browser.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+Step 1: Open browser Developer tools
+Step 2: Click button "KPI", then the browser Console show the Javascript errors
+Step 3: Click button "SALES", and perform multi click lables "Region" and "Global" to switch the data source of Sales.
+Step 4: Click button "KPI", then the browser Console show the Javascript errors again
+Step 5: repeat Step 3 again and browser Console show the more Javascript errors, and hang re-render
