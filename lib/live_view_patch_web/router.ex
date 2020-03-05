@@ -8,7 +8,7 @@ defmodule LiveViewPatchWeb.Router do
     plug :fetch_live_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
-    plug :put_live_layout, {LiveViewPatchWeb.LayoutView, "live.html"}
+    plug :put_root_layout, {LiveViewPatchWeb.LayoutView, "live.html"}
   end
 
   pipeline :api do
